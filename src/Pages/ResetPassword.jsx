@@ -14,7 +14,7 @@ const ResetPassword = () => {
     e.preventDefault();
     try {
       const res = await axios.post(
-        `http://localhost:5000/api/auth/reset-password/${id}/${token}`,
+        `https://node-task-1-yunj.onrender.com/api/auth/reset-password/${id}/${token}`,
         { password }
       );
       toast.success(res.data.message);
