@@ -14,7 +14,7 @@ const ResetPassword = () => {
     e.preventDefault();
     try {
       const res = await axios.post(
-        `https://node-task-1-yunj.onrender.com/api/auth/reset-password/${id}/${token}`,
+        `https://node-task-2-pva3.onrender.com/api/auth/reset-password/${id}/${token}`,
         { password }
       );
       toast.success(res.data.message);

@@ -12,7 +12,7 @@ const ForgotPassword = () => {
     e.preventDefault();
 
     try {
-      const res = await axios.post("https://node-task-1-yunj.onrender.com/api/auth/forgot-password", { email });
+      const res = await axios.post("https://node-task-2-pva3.onrender.com/api/auth/forgot-password", { email });
       toast.success(res.data.message);
       navigate("/login");
     } catch (error) {

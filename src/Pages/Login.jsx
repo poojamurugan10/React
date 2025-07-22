@@ -14,7 +14,7 @@ const Login = ({ setToken }) => {
     const payload = { email, password };
 
     try {
-      const res = await axios.post("https://node-task-1-yunj.onrender.com/api/auth/login", payload);
+      const res = await axios.post("https://node-task-2-pva3.onrender.com/api/auth/login", payload);
       toast.success(res.data.message);
       setToken(res.data.token);
       setEmail("");

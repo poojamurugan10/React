@@ -16,7 +16,7 @@ const Register = () => {
     const payload = { name, email, password };
 
     try {
-      const res = await axios.post("https://node-task-1-yunj.onrender.com/api/auth/register", payload);
+      const res = await axios.post("https://node-task-2-pva3.onrender.com/api/auth/register", payload);
       toast.success(res.data.message);
       setName("");
       setEmail("");
